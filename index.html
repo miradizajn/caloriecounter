@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Ettől, fontos az átnevezés -->
+        <div class="elem">
+            <h2>Mák</h2>
+
+            <table>
+                <tr>
+                    <td>Mennyiség:</td>
+                    <td>10 g</td>
+                </tr>
+                <tr>
+                    <td>Kalória:</td>
+                    <td>23 kCal</td>
+                </tr>
+                <tr>
+                    <td>Ár</td>
+                    <td>140 Ft</td>
+                </tr>
+            </table>
+
+            <div>
+                <button id="makPrev" class="inputGomb">-</button>
+                <input type="text" min="0" max="10" id="mak" class="inputDb">
+                <button id="makNext" class="inputGomb">+</button>
+            </div>
+            
+            <div>
+                <label for="kaloria">Kalória:</label>
+                <input type="text" id="kaloria" disabled>
+            </div>
+            
+            <div>
+                <label for="ar">Ár:</label>
+                <input type="text" id="ar" disabled>
+            </div>
+        </div>
+        <!-- Eddig -->
+
+        <div class="elem">
+
+            <h2>Dió</h2>
+
+            <table>
+                <tr>
+                    <td>Mennyiség:</td>
+                    <td>10 g</td>
+                </tr>
+                <tr>
+                    <td>Kalória:</td>
+                    <td>35 kCal</td>
+                </tr>
+                <tr>
+                    <td>Ár</td>
+                    <td>120 Ft</td>
+                </tr>
+            </table>
+
+            <div>
+                <button id="dioPrev" class="inputGomb">-</button>
+                <input type="text" min="0" max="10" id="dio" class="inputDb">
+                <button id="dioNext" class="inputGomb">+</button>
+            </div>
+            
+            <div>
+                <label for="diokaloria">Kalória:</label>
+                <input type="text" id="diokaloria" disabled>
+            </div>
+            
+            <div>
+                <label for="dioar">Ár:</label>
+                <input type="text" id="dioar" disabled>
+            </div>
+        </div>
+        <div class="elem">
+
+        </div>
+
+        <div class="elem"></div>
+        <div class="elem">
+            <h2>Összesítve: </h2>
+            <div>
+                <label for="osszar">Összár</label>
+                <input type="text" id="osszar" disabled value="750">
+            </div>
+            <div>
+                <label for="osszkal">Összkalória</label>
+                <input type="text" id="osszkal" disabled value="1235">
+            </div>
+            <div>
+                <label for="osszgramm">Összgramm</label>
+                <input type="text" id="osszgramm" disabled value="500">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
